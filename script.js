@@ -18,13 +18,12 @@
 // }
 
 
-let select = document.getElementById('colorSelect')
-let btn = document.querySelector('input[type=button')
+let btn=document.getElementsByTagName("input")[0];
+let colorSelect=document.querySelector("#colorSelect");
 
-btn.addEventListener('click', ()=>{
-	for(const child of select.children){
-		if(child.value === select.value){
-			child.remove();
-		}
-	}
-})
+	let call = function() {
+    colorSelect.remove(colorSelect.selectedIndex);
+}
+
+
+btn.addEventListener("click",call);
