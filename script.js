@@ -7,8 +7,12 @@
 // 			return dropDown.removeChild(option[i]);
 // });
 
-const dropDown = document.querySelector("#colorSelect");
-function removeElement(){
-	let cv = dropDown.value;
-	dropDown.remove(cv)	
+// const dropDown = document.querySelector("#colorSelect");
+// function removeElement(){
+// 	let cv = dropDown.value;
+// 	dropDown.remove(cv)	
+// }
+function remove(){
+	let ele = document.getElementById("colorSelect");
+	ele.remove(ele.selectedindex);
 }
