@@ -12,7 +12,7 @@
 // 	let cv = dropDown.value;
 // 	dropDown.remove(cv)	
 // }
-function remove(){
+function removeElement(){
 	let ele = document.getElementById("colorSelect");
 	ele.remove(ele.selectedindex);
 }
