@@ -12,7 +12,19 @@
 // 	let cv = dropDown.value;
 // 	dropDown.remove(cv)	
 // }
-function removeElement(){
-	let ele = document.getElementById("colorSelect");
-	ele.remove(ele.selectedindex);
-}
+// function removeElement(){
+// 	let ele = document.getElementById("colorSelect");
+// 	ele.remove(ele.selectedindex);
+// }
+
+
+let select = document.getElementById('colorSelect')
+let btn = document.querySelector('input[type=button')
+
+btn.addEventListener('click', ()=>{
+	for(const child of select.children){
+		if(child.value === select.value){
+			child.remove();
+		}
+	}
+})
